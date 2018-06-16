@@ -1,8 +1,8 @@
 # Relax Challenge  
 The data is available as two attached CSV files: 
 
-<em> File 1 takehome_user_engagement.csv </em>
-<em> File 2 takehome_users.csv </em>
+<em> File 1 takehome_user_engagement.csv </em> <br>
+<em> File 2 takehome_users.csv </em> <br>
 <br>
 The data has the following two tables: 
 <br>
