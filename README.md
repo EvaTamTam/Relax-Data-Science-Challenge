@@ -1,17 +1,20 @@
 # Relax Challenge  
+The data is available as two attached CSV files: 
+
+<em> File 1 takehome_user_engagement.csv </em>
+<em> File 2 takehome_users.csv </em>
 <br>
-The data is available as two attached CSV files: <br>
-takehome_user_engagement. csv <br>
-takehome_users . csv <br>
-The data has the following two tables: <br>
+The data has the following two tables: 
+<br>
 ## Table 1
 A user table ( "takehome_users" ) with data on 12,000 users who signed up for the
 product in the last two years. This table includes:
-* name: the user's name
-* object_id: the user's id
-* email: email address
-* creation_source: how their account was created. This takes on one
-of 5 values:
+<br>
+1. name: the user's name <br>
+2. object_id: the user's id <br>
+3. email: email address <br>
+4. creation_source: how their account was created. This takes on one
+of 5 values: 
 * PERSONAL_PROJECTS: invited to join another user's
 personal workspace
 * GUEST_INVITE: invited to an organization as a guest
@@ -19,11 +22,11 @@ personal workspace
 * ORG_INVITE: invited to an organization (as a full member)
 * SIGNUP: signed up via the website
 * SIGNUP_GOOGLE_AUTH: signed up using Google
-Authentication (using a Google email account for their login
+5. Authentication (using a Google email account for their login
 id)
-* creation_time: when they created their account
-* last_session_creation_time: unix timestamp of last login
-* opted_in_to_mailing_list: whether
+6. creation_time: when they created their account
+7. last_session_creation_time: unix timestamp of last login
+8. opted_in_to_mailing_list: whether
 
 ## Table 2
 A usage summary table ("takehome_user_engagement" ) that has a row for each day
@@ -36,19 +39,6 @@ days in at least one sevenday period , identify which factors predict future use
 Using Gradient Boosting Classifier, I was able to identify the following features from highest importance to lowest:
 <html>
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
